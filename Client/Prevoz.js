@@ -1,11 +1,13 @@
 export class Prevoz
 {
-    constructor(naziv, slika, cena, prosecnaZarada)
+    constructor(naziv, slika, cena, prosecnaZarada, kompanijaID, voziloID)
     {
         this.naziv=naziv;
         this.slika=slika;
         this.cena=cena;
         this.prosecnaZarada=prosecnaZarada;
+        this.kompanijaID=kompanijaID;
+        this.voziloID=voziloID;
 
         this.cont=null;
     }
@@ -34,7 +36,7 @@ export class Prevoz
 
         let im=document.createElement("img");
         im.className="slikaVozila";
-        im.src=this.slika;
+        im.src=`../Slike/${this.slika}`;
         pom.appendChild(im);
 
         pom=document.createElement("div");
@@ -60,11 +62,12 @@ export class Prevoz
 
     Isporuci()
     {
-        alert("POZZZZZZZZZZZZZZ");
+        fetch("https://localhost:5001/Vozilo/RezervisiVozilo/" + this.kompanijaID + "/" + this.voziloID,{
+            method:"POST"
+        })  
+        alert("Uspesno ste rezervisali vozilo."); 
     }
-
-
 }
 
-var vozilo = new Prevoz("Mercedes", "../Slike/slika1.png", 180000, 2000000);
-vozilo.crtajPrevoz(document.body);
+// var vozilo = new Prevoz("Mercedes", "../Slike/slika1.png", 180000, 2000000);
+// vozilo.crtajPrevoz(document.body);

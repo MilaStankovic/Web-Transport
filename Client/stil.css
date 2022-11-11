@@ -1,9 +1,27 @@
+.glavniKontejner
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .glavniDivZaPrevoz
 {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 400px;
     border: 1px solid black;
     border-radius: 10px;
-    max-width: 33%;
+    /* max-width: 30%; */
     padding: 10px;
+}
+
+.leviPrikaz
+{
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 400px;
+    margin-bottom: 10px;
 }
 
 .nazivPrevoza
@@ -48,9 +66,31 @@
 
 .labelaZaRed
 {
-    width: 150px;
+    width: 250px;
 }
 
 .nazivKlaseZajednicka {
-    width: 170px;
+    width: 100%;
+}
+
+.divZaDugmePronadji
+{
+   text-align: center; 
+   margin-top: 20px;
+   width: 100%;
+}
+
+.dugmeZaPronalazak
+{
+    padding: 5px;
+    width: 100%;
+}
+
+.desniPrikaz 
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 15px;
 }
