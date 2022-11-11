@@ -1,0 +1,56 @@
+.glavniDivZaPrevoz
+{
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width: 33%;
+    padding: 10px;
+}
+
+.nazivPrevoza
+{
+    text-align: center;
+}
+
+.divZaSlikuVozila
+{
+    border: 1px solid black;
+    max-width: 50%;
+    text-align: center;
+    margin: auto;
+}
+
+.slikaVozila
+{
+    max-width: 70%;
+    text-align: center;
+}
+
+.cenaVozila
+{
+    text-align: center;
+}
+
+.zaradaFirmeVozila
+{
+    text-align: center;
+}
+
+.divZaDugmeIsporuke     
+{
+    text-align: center;
+}
+
+.red {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+
+.labelaZaRed
+{
+    width: 150px;
+}
+
+.nazivKlaseZajednicka {
+    width: 170px;
+}
